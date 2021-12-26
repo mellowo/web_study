@@ -4,7 +4,7 @@
 * 포워드 기능 : 하나의 서블릿에서 다른 서블릿이나 JSP와 연동하는 방법을 말한다.    	
 * redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용   
 ```java
-response.sendRedirect(“mapping_name”)   
+	response.sendRedirect(“mapping_name”)   
 ```
 			
 		refresh - HttpServletResponse 객체의 addHeader() 메서드를 이용함
