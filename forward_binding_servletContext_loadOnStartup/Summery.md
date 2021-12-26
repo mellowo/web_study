@@ -28,5 +28,17 @@
 		removeAttribute(String name) - 각 객체에 바인딩된 자원(데이터)을 name으로 제거합니다.
 		
 		
-ServletContext와 ServletConfig 사용법   
+## ServletContext와 ServletConfig 사용법   
+
+	javax.servlet.ServletContext로 정의되어 있습니다.
+	서블릿과 컨테이너 간의 연동을 위해 사용합니다.
+	컨텍스트(웹 애플리케이션)마다 하나의 ServletContext가 생성됩니다.
+	서블릿끼 리 자원(데이터)을 공유하는 데 사용합니 다.
+	컨테이너 실행 시 생성되고 컨테이너 종료 시 소멸됩니다.
+
+ 	서블릿에서 파일 접근 기능
+		- 자원 바인딩 기능
+		- 로그 파일 기능
+		- 컨텍스트에서 제공하는 설정 정보 제공 기능
+
 load-on-startup 기능 사용하기    
