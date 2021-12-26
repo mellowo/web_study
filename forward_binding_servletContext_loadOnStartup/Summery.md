@@ -1,8 +1,8 @@
 # 8장 서블릿 확장 API사용하기
 
 ## 서블릿 포워드 기능 사용하기   
-포워드 기능 : 하나의 서블릿에서 다른 서블릿이나 JSP와 연동하는 방법을 말한다.    	
-redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용   
+* 포워드 기능 : 하나의 서블릿에서 다른 서블릿이나 JSP와 연동하는 방법을 말한다.    	
+* redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용   
 ```
 response.sendRedirect(“mapping_name”)   
 ```
