@@ -37,18 +37,24 @@
 	
 * **setAttribute - 자원(데이터)을 각 객체에 바인딩함**
 ```java
-	setAttribute(String name,Object obj)
+	request.setAttribute(String name,Object obj)
 ```
 
 <br>
 
 * **getAttribute - 각 객체에 바인딩된 자원(데이터)을 name으로 가져옴**
 ```java
-	removeAttribute(String name)
+	request.getAttribute(String name)
 ```
-	
+
 <br>
-		
+
+* **removeAttribute(String name) - 각 객체에 바인딩된 자원(데이터)을 name으로 제거합니다.**
+```java
+	request.removeAttribute(String name)
+```
+<br>
+
 ## ServletContext와 ServletConfig 사용법   
 
 	javax.servlet.ServletContext로 정의되어 있음
