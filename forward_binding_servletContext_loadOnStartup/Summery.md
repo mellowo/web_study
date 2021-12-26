@@ -33,15 +33,21 @@
 
 ## 바인딩 
 
-
-	바인딩 : 서블릿에서 다른 서블릿 또는 JSP로 대량의 데이터를 공유하거나 전달할때 사용하능 기능 
+* 바인딩 : 서블릿에서 다른 서블릿 또는 JSP로 대량의 데이터를 공유하거나 전달할때 사용하능 기능 
 	
-		setAttribute(String name,Object obj) - 자원(데이터)을 각 객체에 바인딩함
-		
-		getAttribute(String name) - 각 객체에 바인딩된 자원(데이터)을 name으로 가져옴
+* **setAttribute - 자원(데이터)을 각 객체에 바인딩함**
+```java
+	setAttribute(String name,Object obj)
+```
 
-		removeAttribute(String name) - 각 객체에 바인딩된 자원(데이터)을 name으로 제거함
-		
+<br>
+
+* **getAttribute - 각 객체에 바인딩된 자원(데이터)을 name으로 가져옴**
+```java
+	removeAttribute(String name)
+```
+	
+<br>
 		
 ## ServletContext와 ServletConfig 사용법   
 
