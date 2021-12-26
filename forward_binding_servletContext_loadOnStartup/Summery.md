@@ -6,6 +6,7 @@
 <br>
 
 * **redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용**
+ 	
 ```java
 	response.sendRedirect(“mapping_name”)   
 ```
