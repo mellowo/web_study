@@ -2,15 +2,20 @@
 
 ## 서블릿 포워드 기능 사용하기   
 * 포워드 기능 : 하나의 서블릿에서 다른 서블릿이나 JSP와 연동하는 방법을 말한다.    	
+
+<br>
+
 * **redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용**
 ```java
 	response.sendRedirect(“mapping_name”)   
 ```
+<br>
 
 * **refresh - HttpServletResponse 객체의 addHeader() 메서드를 이용함**
 ```java
 	response.addHeader(“Refresh”,”1;url=mapping_name”);  
 ```
+<br>
 
 * **location - 자바스크립트 location 객체의 href 속성을 이용함**
 ```java
