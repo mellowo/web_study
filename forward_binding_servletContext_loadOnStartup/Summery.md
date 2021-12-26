@@ -7,7 +7,7 @@
 	response.sendRedirect(“mapping_name”)   
 ```
 
-* refresh - HttpServletResponse 객체의 addHeader() 메서드를 이용함
+	* refresh - HttpServletResponse 객체의 addHeader() 메서드를 이용함
 response.addHeader(“Refresh”,”1;url=mapping_name”);  
 			
 		location - 자바스크립트 location 객체의 href 속성을 이용함
