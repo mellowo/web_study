@@ -5,6 +5,9 @@
 
 <br>
 
+<span style="color:red">붉은 색</span>
+
+
 <span style="color:red">redirect - HttpServletResponse 객체의 sendRedirect() 메서드를 이용</span>
 ```java
 	response.sendRedirect(“mapping_name”)   
