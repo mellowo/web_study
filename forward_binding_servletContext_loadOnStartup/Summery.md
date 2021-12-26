@@ -9,17 +9,17 @@
 
 * refresh - HttpServletResponse 객체의 addHeader() 메서드를 이용함
 ```java
-response.addHeader(“Refresh”,”1;url=mapping_name”);  
+	response.addHeader(“Refresh”,”1;url=mapping_name”);  
 ```
 * location - 자바스크립트 location 객체의 href 속성을 이용함
 ```java
-location.href=’요청할 서블릿 또는 JSP’;
+	location.href=’요청할 서블릿 또는 JSP’;
 ```
 
 * dispatch - 일반적으로 포워딩 기능을 지칭함
 ```java
-RequestDispatcher dis= request.getRequestDispatcher("포워드할 서블릿 또는 JSP");
-dis.forward(request,response);
+	RequestDispatcher dis= request.getRequestDispatcher("포워드할 서블릿 또는 JSP");
+	dis.forward(request,response);
 ```
 
 ## 바인딩 
