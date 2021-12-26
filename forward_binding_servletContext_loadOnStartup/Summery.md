@@ -18,6 +18,7 @@
 ```
 
 <br>
+
 * **dispatch - 일반적으로 포워딩 기능을 지칭함**
 ```java
 	RequestDispatcher dis= request.getRequestDispatcher("포워드할 서블릿 또는 JSP");
