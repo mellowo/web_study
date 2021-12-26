@@ -13,7 +13,7 @@
 			location.href=’요청할 서블릿 또는 JSP’;
 		
 		dispatch - 일반적으로 포워딩 기능을 지칭합니다.
-			RequestDispatcher dis= request•getRequestDispatcher("포워드할 서블릿 또는 JSP");
+			RequestDispatcher dis= request.getRequestDispatcher("포워드할 서블릿 또는 JSP");
 			dis.forward(request,response);
 
 서블릿의 여러가지 포워드방법   
