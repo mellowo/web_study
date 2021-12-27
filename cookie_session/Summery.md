@@ -39,9 +39,12 @@ out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 �
 
 ```java
 Cookie c=new Cookie("cookieTest",URLEncoder.encode("JSP프로그래밍입니다.","utf-8"));
+
 //Persistence쿠키
 c.setMaxAge(24*60*60); 
+
 //Session 쿠키
 c.setMaxAge(-l); 
+
 response.addCookie(c)
 ```
