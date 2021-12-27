@@ -34,3 +34,4 @@ out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 �
 |종료 시기|쿠키를 삭제하거나 쿠키 설정 값이 종료된 경우|브라우저를 종료한 경우|
 |최초 접속 시 전송 여부|최초 접속 시 서버로 전송|최초 접속 시 서버로 전송되지 않음|
 |용도|로그인 유무 또는 팝업창을 제한할 때|사이트 접속 시 Session 인증 정보를 유지할 때|
+|방법|setMaxAge(int) 양수지정|setMaxAge(int) 음수지정하거나 setMaxAge(int) 사용x|
