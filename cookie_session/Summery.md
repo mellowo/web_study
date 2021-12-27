@@ -9,3 +9,16 @@
 * **URL Rewriting** : GET 방식으로 URL 뒤에 정보를 붙여서 다른 페이지로 전송함
 * **쿠키** : 클라이언트 PC의 Cookie 파일에 정보를 저장한 후 웹 페이지들이 공유함
 * **세션** : 서버 메모리에 정보를 저장한 후 웹 페이지들이 공유함
+
+### hidden 태그
+  `
+  <form name="frmLogin" method="post" action="login" encType="UTF-8">
+ 	아이디 : <input type="text" name="user_id"><br>
+ 	비밀번호 : <input type="password" name="user_pw"><br>
+ 	<input type="submit" value="로그인">
+ 	<input type="reset" value="다시입력">
+ 	<input type="hidden" name="user_address" value="서울시 성북구">
+ 	<input type="hidden" name="user_email" value="test@gmail.com">
+ 	<input type="hidden" name="user_hp" value="010-111-2222">
+ </form>
+  `
