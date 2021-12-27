@@ -55,3 +55,26 @@ System.out.println(URLDecoder.decode(allValues[0].getValue(),"utf-8"));
 ```
   
 ### 세션   
+
+|반환 타입| 메서드 |설명|
+|-|-|-|
+|Object| getAttribute(String name)| 속성 이름이 name인 속성 값을 Object 타입으로 반환합니다. 해당되는 속성 이름이 없을 경우 null 값을 반환합니다.|
+Enumeration getAttributeNames() 세션 속성 이름들을 Enumeration 객체 타입으로 반환합니다.
+long getCreationTime() 1970년 1월 1 일 0시 0초를 기준으로 현재 세션이 생성된 시간까지 경과한 시
+간을 계산하여 1/1000초 값으로 반환합니다.
+String getld() 세션에 할당된 고유 식별자를 String 타입으로 반환합니다.
+int getMaxInactivelnter
+val()
+현재 생성된 세션을 유지하기 위해 설정된 세션 유지 시간을 int 타입으로 반환
+합니다.
+void invalidate() 현재 생성된 세션을 소멸합니다.
+boolean isNew() 최초로 생성된 세션인지 기존에 생성되어 있었던 세션인지 판별합니다.
+void removeAttribute(Str
+ing name)
+세션 속성 이름이 name인 속성을 제거합니다.
+void setAttribute(String
+name. Object value)
+세션 속성 이름이 name인 속성에 속성 값으로 value를 할당합니다.
+void setMaxInactivelnter
+val(int interval)
+세션을 유지하기 위한 세션 유지 시간을 초 단위로 설정합니다.
