@@ -28,5 +28,5 @@
 out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 번째 서블릿으로 보내기</a>");
 ```
   
-  
-  <table><tr><td>dd</td></tr></table>
+|속성|Persistence쿠키|Session 쿠키|
+|-|-|-|
