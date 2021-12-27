@@ -11,6 +11,7 @@
 * **세션** : 서버 메모리에 정보를 저장한 후 웹 페이지들이 공유함
 
 ### hidden 태그
+---
 ```html
   <form name="frmLogin" method="post" action="login" encType="UTF-8">
  	아이디 : <input type="text" name="user_id"><br>
@@ -24,11 +25,13 @@
 ```
 
 ### URL Rewriting
+---
 ```java
 out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 번째 서블릿으로 보내기</a>");
 ```
 
 ### 쿠키   
+---
 |속성|Persistence쿠키|Session 쿠키|
 |-|-|-|
 |생성위치|파일로생성|브라우저메모리에 생성|
@@ -55,6 +58,7 @@ System.out.println(URLDecoder.decode(allValues[0].getValue(),"utf-8"));
 ```
   
 ### 세션   
+---
 * 정보가 서버의 메모리에 저장됩니다.
 * 브라우저의 세션 연동은 세션 쿠키를 이용합니다.
 * 쿠키보다 보안에 유리합니다.
