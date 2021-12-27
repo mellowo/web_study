@@ -10,7 +10,7 @@
 * **쿠키** : 클라이언트 PC의 Cookie 파일에 정보를 저장한 후 웹 페이지들이 공유함
 * **세션** : 서버 메모리에 정보를 저장한 후 웹 페이지들이 공유함
 
-* ### hidden 태그
+### hidden 태그
   ```html
   <form name="frmLogin" method="post" action="login" encType="UTF-8">
  	아이디 : <input type="text" name="user_id"><br>
