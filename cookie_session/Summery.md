@@ -36,3 +36,12 @@ out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 �
 |최초 접속 시 전송 여부|최초 접속 시 서버로 전송|최초 접속 시 서버로 전송되지 않음|
 |용도|로그인 유무 또는 팝업창을 제한할 때|사이트 접속 시 Session 인증 정보를 유지할 때|
 |방법|setMaxAge(int) 양수지정|setMaxAge(int) 음수지정하거나 setMaxAge(int) 사용x|
+
+```java
+Cookie c=new Cookie("cookieTest",URLEncoder.encode("JSP프로그래밍입니다.","utf-8"));
+//Persistence쿠키
+c.setMaxAge(24*60*60); 
+//Session 쿠키
+c.setMaxAge(-l); 
+response.addCookie(c)
+```
