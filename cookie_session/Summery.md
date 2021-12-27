@@ -27,7 +27,8 @@
 ```java
 out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 번째 서블릿으로 보내기</a>");
 ```
-  
+
+### 쿠키   
 |속성|Persistence쿠키|Session 쿠키|
 |-|-|-|
 |생성위치|파일로생성|브라우저메모리에 생성|
