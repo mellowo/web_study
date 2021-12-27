@@ -25,5 +25,5 @@
 
 ### URL Rewriting
 ```java
-out.print("<a href='/pro09/second?user_address="+user_address+"'>두 번째 서블릿으로 보내기</a>");
+out.print("<a href='/cookie_session/second?user_address="+user_address+"'>두 번째 서블릿으로 보내기</a>");
 ```
