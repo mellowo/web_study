@@ -47,6 +47,11 @@ c.setMaxAge(24*60*60);
 c.setMaxAge(-l); 
 
 response.addCookie(c)
+
+//쿠키 get
+Cookie[] allValues=request.getCookies();		
+System.out.println(allValues[0].getName());
+System.out.println(URLDecoder.decode(allValues[0].getValue(),"utf-8"));
 ```
   
 ### 세션   
