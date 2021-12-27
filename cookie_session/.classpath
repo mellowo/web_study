@@ -9,5 +9,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="/Users/igeonhyeong/opt/tomcat-9.0.56/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Users/igeonhyeong/opt/tomcat-9.0.56/lib/mariadb-java-client-2.7.4.jar"/>
+	<classpathentry kind="lib" path="/Users/igeonhyeong/opt/tomcat-9.0.56/commons-dbcp2-2.9.0/commons-dbcp2-2.9.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

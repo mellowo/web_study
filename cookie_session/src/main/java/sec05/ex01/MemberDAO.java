@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec05.ex01;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,31 +33,20 @@ public class MemberDAO {
 		List<MemberVO> list = new ArrayList<MemberVO>();
 		try {
 			// connDB();
-	
-			 
-			con = dataFactory.getConnection();  //dataFactory.getConnection(); -> 데이터베이스 연결
+			con = dataFactory.getConnection();
 			System.out.println("커넥션완료");
 			String query = "select * from test1;";
 			System.out.println("prepareStatememt: " + query);
 			pstmt = con.prepareStatement(query);
-			ResultSet rs = pstmt.executeQuery(); //ResultSet객체로 query값 반환 
-			
-			/*
-			   id      passwd      name      age
-			 mellowo     11         lee       29
-			 elelele     12         jee       30
-			 */
-			
+			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
 				String id = rs.getString("id");
-				String passwd = rs.getString("passwd");
 				String name = rs.getString("name");
 				String age = rs.getString("age");
 				MemberVO vo = new MemberVO();
 				vo.setId(id);
 				vo.setName(name);
 				vo.setAge(age);
-				vo.setPasswd(passwd);
 				list.add(vo);
 			}
 			rs.close();

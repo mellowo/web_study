@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec05.ex01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -39,12 +39,10 @@ public class MemberServlet extends HttpServlet {
 	    for (int i=0 ; i < list.size(); i++) {
 	    	MemberVO vo = list.get(i);
 	    	String id = vo.getId();
-	    	String passwd = vo.getPasswd();
 	    	String name = vo.getName();
 	    	String age = vo.getAge();
 	    	
 	    	System.out.print(id + " ");
-	    	System.out.print(passwd + " ");
 	    	System.out.print(name + " ");
 	    	System.out.print(age + " ");
 	    	System.out.println();
@@ -52,15 +50,14 @@ public class MemberServlet extends HttpServlet {
 	    
 	    out.print("<html><body>");
 	    out.print("<table border=1><tr align='center' bgcolor='lightgreen'>");
-	    out.print("<td>아이디</td><td>비밀번호</td><td>이름</td><td>나이</td></tr>");
+	    out.print("<td>아이디</td><td>이름</td><td>나이</td></tr>");
 	    for (int i = 0 ; i < list.size() ; i++) {
 	    	MemberVO vo = list.get(i);
 	    	String id = vo.getId();
-	    	String passwd = vo.getPasswd();
 	    	String name = vo.getName();
 	    	String age = vo.getAge();
 	    	
-	    	out.print("<tr><td>" + id + "</td><td>" + passwd + "</td><td>" + name +"</td><td>" + age + "</td></tr>" );
+	    	out.print("<tr><td>" + id + "</td><td>" + name +"</td><td>" + age + "</td></tr>" );
 	    	
 	    }
 	    out.print("</table></body></html>");
