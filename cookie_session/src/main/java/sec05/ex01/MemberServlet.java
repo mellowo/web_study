@@ -35,7 +35,7 @@ public class MemberServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();
 	    MemberDAO dao=new MemberDAO();
 	    
-	    List<MemberVO> list = dao.listMembers();
+	    //List<MemberVO> list = dao.listMembers();
 	    
 		/*
 		 * out.print("<html><body>");
