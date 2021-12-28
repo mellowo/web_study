@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class SessionTest4
  */
-@WebServlet("/login")
+@WebServlet("/login11")
 public class SessionTest4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

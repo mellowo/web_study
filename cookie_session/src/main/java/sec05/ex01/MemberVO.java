@@ -2,6 +2,7 @@ package sec05.ex01;
 
 public class MemberVO {
 	private String id ;	
+	private String passwd;
 	private String name ;
 	private String age ; 
 	
@@ -31,6 +32,14 @@ public class MemberVO {
 
 	public void setAge(String age) {
 		this.age = age;
+	}
+
+	public String getPasswd() {
+		return passwd;
+	}
+
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
 	};
 	
 	
