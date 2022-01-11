@@ -66,14 +66,14 @@ public String getName(){ return name;}
 
 |내장 객체 | 서블릿 타입 | 설명|
 |-|-|-|
-|request |javax•servlet.http.HttpServletRequest |클라이언트의 요정 정보를 저장|
-|response |javax•servlet.http.HttpServletResponse| 응답 정보를 저장|
+|request |javax.servlet.http.HttpServletRequest |클라이언트의 요정 정보를 저장|
+|response |javax.servlet.http.HttpServletResponse| 응답 정보를 저장|
 |out |javax.servlet.jsp.JspWriter |JSP 페이지에서 결과를 출력|
-|session |javax•servlet.http.HttpSession |세션 정보를 저장|
-|application| javax•servlet.ServletContext| 컨텍스트 정보를 저장|
+|session |javax.servlet.http.HttpSession |세션 정보를 저장|
+|application| javax.servlet.ServletContext| 컨텍스트 정보를 저장|
 |pageContext| javax.servlet.jsp.PageContext |JSP 페이지에 대한 정보를 저장|
 |page |java.lang.Object |JSP 페이지의 서블릿 인스턴스를 저장|
-|config |javax•servlet.ServletConfig| JSP 페이지에 대한 설정 정보를 저장|
+|config |javax.servlet.ServletConfig| JSP 페이지에 대한 설정 정보를 저장|
 |exception |java.lang.Exception| 예외 발생 시 예외를 처리|
 
 ### 내장객체 스코프 
@@ -83,7 +83,7 @@ public String getName(){ return name;}
 |page| this| 한 번의 요정에 대해 하나의 JSP 페이지를 공유합니다.|
 |request |HttpServletRequest |한 번의 요청에 대해 같은 요정을 공유하는 JSP 페이지를 공유합니다.|
 |session |HttpSession |같은 브라우저에서 공유합니다.|
-|application |ServletContext 같은 애플리케이션에서 공유합니다.|
+|application |ServletContext | 같은 애플리케이션에서 공유합니다.|
 
 ## JSP 페이지 예외 처리하기
 
