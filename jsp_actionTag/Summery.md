@@ -8,7 +8,7 @@
 |포워드 액션 태그 |<jsp:forward>| 서블릿에서 RequestDispatcher 클래스의 포워딩 기능을 대신하는 태그|
 |유즈빈 액션 태그| <jsp:useBean> |객체를 생성하기 위한 new 연산자를 대신하는 태그|
 |셋프로퍼티 액션 태그 |<jsp:setProperty> |setter를 대신하는 태그|
-|겟프로퍼티 액션 태그 |<jsp:getProperty> getter를 대신하는 태그|
+|겟프로퍼티 액션 태그 |<jsp:getProperty>| getter를 대신하는 태그|
 
 ## 인클루드 액션 태그 
 
@@ -50,10 +50,10 @@
 ### setProperty, getProperty
 
 ```java
-<jsp:setProperty name="m" property="id" value=l<%= request.getParameter("id") %>' />
-<jsp:setProperty name="m" property="pwd" value=l<%= request.getParameter("pwd") %>' />
-<jsp:setProperty name="m" property="name" value=l<%= request.getParameter("name") %>’ />
-<jsp:setProperty name="m" property="email" value=l<%= request.getParameter("email") %>' />
+<jsp:setProperty name="m" property="id" value=<%= request.getParameter("id") %>' />
+<jsp:setProperty name="m" property="pwd" value=<%= request.getParameter("pwd") %>' />
+<jsp:setProperty name="m" property="name" value=<%= request.getParameter("name") %>’ />
+<jsp:setProperty name="m" property="email" value=<%= request.getParameter("email") %>' />
 
 or (JSP나 HTML 페이지에서 전달된 데이터를 처리할 때 미리 매개변수 이름과 속성 이름을 동일하게 설정한 경우)
 
