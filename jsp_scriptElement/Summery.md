@@ -32,6 +32,7 @@ public String getName(){ return name;}
 
 * 표현식은 JSP 페이지의 정한 위치에 값을 출력하는 기능임. JSP페이지에서 변수나 메서드의 결괏값 등을 브라우저에 출력하는 용도로 사용함.
  * 표현식안에는 세미클론(;)이 있으면안된다.
+ 
 ```java
 <%= 값 or 자바 변수 or 자바 식 %>
 <%=lnteger.parselnt(age)+10 %>
