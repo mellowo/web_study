@@ -9,11 +9,11 @@ request.setCharacterEncoding("utf-8");
 
 <c:set var="id" value="hong" scope="page"></c:set>
 <c:set var="pwd" value="1234" scope="page"></c:set>
-<c:set var="name" value="${'홍길동'}" scope="page"></c:set>
 <c:set var="age" value="${22}" scope="page" ></c:set>
 <c:set var="height" value="${177}" scope="page"></c:set>
 <c:set var="context" value="${pageContext.request.contextPath}"></c:set>
-
+<c:set var="name" value='${param.name} '></c:set>
+<c:set var="name1" value='${requestScope.name1}'></c:set>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +24,10 @@ request.setCharacterEncoding("utf-8");
 <h1>
 ${id} <br>
 ${pwd} <br>
-${pageContext.request.contextPath}
+${pageContext.request.contextPath} <br>
+${name}<br>
+${name1}
+<br>
 <a href="${context}/login.html" >이동하기 </a>
 </h1>
 </body>
