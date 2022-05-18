@@ -2,6 +2,9 @@ package sec01.ex01;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -25,6 +28,24 @@ public class MemberDAO1 {
 		}
 	}
 	
-	
+	public List<MemberVO> listMember(){
+		List<MemberVO> vo = new ArrayList<MemberVO>();
+		
+		try {
+			con = dataFactory.getConnection();
+			System.out.println("커넥션 완료");
+			String query = "select * from t_member";
+			System.out.println("preparedStatement : " + query);
+			pstmt = con.prepareStatement(query);
+			ResultSet rs = pstmt.executeQuery();
+			
+			System.out.println(rs);
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		
+		return vo;
+	}
 	
 }
