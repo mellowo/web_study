@@ -1,4 +1,4 @@
-<%@page import="sec02.ex01.MemberDAO"%>
+<%@page import="sec01.ex01.MemberDAO"%>
 <%@page import="sec02.ex01.MemberVO"%>
 <%@page import="java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
