@@ -35,6 +35,7 @@ request.setCharacterEncoding("utf-8");
 			</td>
 			<td>
 				<jsp:getProperty property="email" name="m"/>
+				<jsp:getProperty property="email" name="m"/>
 			</td>									
 		</tr>
 		<tr height="1" bgcolor="#99ccff">
