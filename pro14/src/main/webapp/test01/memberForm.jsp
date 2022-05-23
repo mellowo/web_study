@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form action="member3.jsp" method="post">
+	<form action="member4.jsp" method="post">
 		<h1 style="text-align: center;">회원 가입창</h1>
 			<table align="center">
 				<tr>
