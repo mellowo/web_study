@@ -18,8 +18,6 @@ MemberBean m = new MemberBean(id,pwd,name,email);
 MemberDAO dao = new MemberDAO();
 dao.addMember(m);
 List memberList = dao.listMembers(m);
-
-
 %>
 <!DOCTYPE html>
 <html>
@@ -28,6 +26,7 @@ List memberList = dao.listMembers(m);
 <title>Insert title here</title>
 </head>
 <body>
+<h1>회원 목록창</h1>
 
 </body>
 </html>
