@@ -29,6 +29,7 @@ public class MemberDAO {
 		}
 		// TODO Auto-generated constructor stub
 	}
+ 
 	public List listMembers(MemberBean bean) {
 		
 		List memberList = new ArrayList();
@@ -97,6 +98,7 @@ public class MemberDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 
 	

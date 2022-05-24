@@ -1,3 +1,4 @@
+
 <%@page import="sec01.ex01.MemberDAO"%>
 <%@page import="sec01.ex01.MemberBean"%>
 <%@page import="java.lang.reflect.Member"%>
@@ -29,4 +30,5 @@ List memberList = dao.listMembers(m);
 <h1>회원 목록창</h1>
 
 </body>
+
 </html>
