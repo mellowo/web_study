@@ -11,7 +11,6 @@ request.setCharacterEncoding("utf-8");
 <jsp:useBean id="m1" class="pro14.sec01.ex01.MemberBean"></jsp:useBean>
 <jsp:setProperty name="m1" property="*" />
 <jsp:useBean id="memberList" class="java.util.ArrayList"></jsp:useBean>
-
 <%
 	MemberBean m2 = new MemberBean("son","1234","손흥민","son@test.com");
 	memberList.add(m1);
