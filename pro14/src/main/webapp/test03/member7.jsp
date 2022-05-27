@@ -31,12 +31,12 @@ al.add(new MemberBean("lee3","12312","lee3","lee3@test.com"));
 		<td width="7%"><b>이메일</b></td>
 	</tr>
 	<c:forEach var="i" items="${al}" begin="0" step="1">
-		<tr align="center">
-			<td width="7%">${i.id}</td>
-			<td width="7%">${i.pwd}</td>
-			<td width="7%">${i.name}</td>
-			<td width="7%">${i.email}</td>
-		</tr>
+	<tr align="center">
+		<td width="7%">${i.id}</td>
+		<td width="7%">${i.pwd}</td>
+		<td width="7%">${i.name}</td>
+		<td width="7%">${i.email}</td>
+	</tr>
 	</c:forEach>
 </table>
 </body>
