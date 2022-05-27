@@ -28,6 +28,6 @@ request.setCharacterEncoding("utf-8");
 	fn:replace(title1," ","\")=${fn:replace(title1," ","/")} <br><br> 
 	fn:indexOf(title2,str1)=${fn:indexOf(title2,str1)} <br> 
 	fn:contains(title1,str1)=${fn:contains(title1,str1)} <br> 
-	fn:contains(tit1e2,str1)= ${fn: contains(title2,str1)} <br> 
+	fn:contains(tit1e2,str1)= ${fn:contains(title2,str1)} <br> 
 </body>
 </html>
