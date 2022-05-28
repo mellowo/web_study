@@ -96,7 +96,7 @@ public class MemberDAO {
 			pstmt.setString(2, pwd);
 			pstmt.setString(3, name);
 			pstmt.setString(4, email);
-			pstmt.executeUpdate();
+			pstmt.executeUpdate(); //update시 실행하는 명령어
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

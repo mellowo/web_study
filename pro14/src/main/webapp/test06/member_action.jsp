@@ -9,7 +9,7 @@
 request.setCharacterEncoding("utf-8");
 %>
 <jsp:useBean id="m" class="pro14.sec02.ex01.MemberBean"></jsp:useBean>
-<jsp:setProperty name="m" property="*"/>
+<jsp:setProperty name="m" property="*"/> <!-- BeamberBean 속성 name과 동일하다면 값을 모두가져옴  -->
 <%
 	MemberDAO memDAO = new MemberDAO();
 	memDAO.addMember(m);
