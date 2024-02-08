@@ -6,6 +6,7 @@ public class MemberVO {
 	private String name ;
 	private String email ; 
 	
+//commit test
 	public String getEmail() {
 		return email;
 	}
