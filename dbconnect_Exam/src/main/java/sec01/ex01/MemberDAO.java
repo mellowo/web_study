@@ -17,7 +17,7 @@ public class MemberDAO {
 	private Connection con;
 	private PreparedStatement pstmt;
 	private DataSource dataFactory;
-	
+	//Datasource study
 	public MemberDAO() {
 		try {
 			Context ctx = new InitialContext();
